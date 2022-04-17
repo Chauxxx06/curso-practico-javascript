@@ -18,11 +18,12 @@ console.groupEnd();
 console.group("Triangulo")
 /* const ladoTriangulo = 6;
 const baseTriangulo = 4; */
-function perimetroTriangulo(lado, base) {
-    return lado*2 + base;
+function perimetroTriangulo(ladoIzq, ladoDrch, base) {
+        
+        return ladoIzq + ladoDrch + base;    
 }
 function alturaTriangulo(lado, base) {
-    return Math.sqrt(Math.pow(lado,2) - Math.pow(base/2,2));
+        return Math.sqrt(Math.pow(lado,2) - Math.pow(base/2,2));
 }
 function areaTriangulo(altura, base){
     return ((altura*base)/2)
@@ -58,4 +59,29 @@ function clcAreaCuadrado(){
     const value = input.value;
     const perimtero = areaCuadrado(value);
     alert(perimtero);
+}
+
+function clcPerimetroTriangulo(){
+    const ladoI = document.getElementById("inputTrianguloLadoA");
+    const ladoD = document.getElementById("inputTrianguloLadoB");
+    const baseT = document.getElementById("inputTrianguloBase");
+    const perimetroT = perimetroTriangulo(parseInt(ladoI.value), parseInt(ladoD.value), parseInt(baseT.value));
+    alert(perimetroT);
+}
+
+function clcAreaTriangulo(){
+    const ladoI = document.getElementById("inputTrianguloLadoA");
+    const ladoD = document.getElementById("inputTrianguloLadoB");
+    const baseT = document.getElementById("inputTrianguloBase");
+    let ladoIn = parseInt(ladoI.value);
+    let ladoDn = parseInt(ladoD.value);
+    let baseTn = parseInt(baseT.value);
+    if (ladoIn==ladoDn){
+        const alturaT = alturaTriangulo(ladoIn,baseTn)
+        const areaT = areaTriangulo(alturaT, baseTn);
+        alert(areaT);
+    }else{
+        alert("Este no es un triaunglo isoceles");
+    }
+
 }
