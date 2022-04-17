@@ -44,3 +44,18 @@ function areaCirculo(radius){
 console.log("El perimetro del circulo es: " + perimetroCirculo(4) + " cm");
 console.log("El area del circulo es: " + areaCirculo(4) + " cm2");
 console.groupEnd();
+
+
+function clcPerimetroCuadrado(){
+    const input = document.getElementById("inputCuadrado");
+    const value = input.value;
+    const perimtero = perimetroCuadrado(value);
+    alert(perimtero);
+}
+
+function clcAreaCuadrado(){
+    const input = document.getElementById("inputCuadrado");
+    const value = input.value;
+    const perimtero = areaCuadrado(value);
+    alert(perimtero);
+}
