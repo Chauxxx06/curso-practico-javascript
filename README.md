@@ -13,3 +13,9 @@ entrenamiento javascript
 - Segundo paso: implementar la formulas en Javascripts
 - Tercer paso: Crear Funciones
 - Cuarto paso: integrar JS con HTML
+
+## Taller #3: Estadistica Descriptiva
+- Primer paso: definir formulas
+- Segundo paso: implementar la formulas en Javascripts
+- Tercer paso: Crear Funciones
+- Cuarto paso: integrar JS con HTML
